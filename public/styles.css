@@ -1,0 +1,144 @@
+body {
+  background-color: rgb(231, 230, 230);
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  padding: 0;
+  margin: 0;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h1 {
+  background-color: #feb941;
+  padding: 1rem;
+  margin-top: 0;
+  color: white;
+  font-family: "McLaren", cursive;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.inputArea {
+  height: 18vh; /* This should be responsive */
+  width: 25%;
+  position: relative;
+  left: 37.5%;
+}
+
+input,
+textarea {
+  border: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+input {
+  height: 30%;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 5px 5px 10px grey;
+}
+
+textarea {
+  /* height: 70%; */
+  border-radius: 0 0 5px 5px;
+  box-shadow: 5px 5px 10px grey;
+  resize: none;
+}
+
+.addButton {
+  background-color: #feb941;
+  color: white;
+  border-radius: 50%;
+  border: 0;
+  padding-top: 0.3rem;
+  position: absolute;
+  left: 88%;
+  top: 85%;
+}
+
+.displayArea {
+  min-height: 14vh; /* This should be responsive */
+  width: 14%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px grey;
+  margin: 1rem;
+  margin-top: 4rem;
+  padding-left: 0.5rem;
+  position: relative;
+}
+
+h4,
+p {
+  margin: 0;
+}
+
+.deleteButton {
+  color: #feb941;
+  font-weight: bold;
+  border: 0;
+  background-color: white;
+  position: absolute;
+  left: 65%;
+  top: 70%;
+  background-color: transparent;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Responsive ADD and DELETE buttons [xs <=575px] [sm 576px-767px] [md 768px-991px] [lg 992px-1199px] [xl 1200px-1399px] [xxl >=1400px]*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .addButton {
+    position: absolute;
+    left: 80%;
+    top: 97%;
+  }
+
+  .deleteButton {
+    position: absolute;
+    left: 58%;
+    top: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .addButton {
+    position: absolute;
+    left: 80%;
+    top: 93%;
+  }
+
+  .deleteButton {
+    position: absolute;
+    left: 58%;
+    top: 78%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .addButton {
+    position: absolute;
+    left: 82%;
+    top: 92%;
+  }
+
+  .deleteButton {
+    position: absolute;
+    left: 58%;
+    top: 76%;
+  }
+}
